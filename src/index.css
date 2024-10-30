@@ -13,7 +13,7 @@
     left: 50%;
     transform-origin: center;
     transform: translate(-50%, -50%);
-    box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px 0vw rgba(0, 0, 0, 0.2);
 }
 
 .card:hover {

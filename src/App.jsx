@@ -18,9 +18,9 @@ const Card = () => {
             scale: 0,
             opacity: 1
         }, {
-            scale: 20,
+            scale: 18,
             opacity: 0,
-            duration: 8,
+            duration: 6,
             ease: "power1.out",
             onComplete: () => ripple.remove(),
         });
@@ -51,7 +51,7 @@ const Card = () => {
 
     const handleMouseEnter = () => {
         ripling();
-        const id = setInterval(ripling, 1800);
+        const id = setInterval(ripling, 1300);
         setIntervalID(id);
         setHasEntered(true);
     };
