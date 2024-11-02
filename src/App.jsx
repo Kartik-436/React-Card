@@ -18,36 +18,13 @@ const Card = () => {
             scale: 0,
             opacity: 1
         }, {
-            scale: 18,
+            scale: 20,
             opacity: 0,
             duration: 6,
             ease: "power1.out",
             onComplete: () => ripple.remove(),
         });
     };
-
-    // const golaAnime = () => {
-    //     const tl = gsap.timeline({
-    //         onComplete: () => {
-    //             // Ensure objects are positioned back to their original positions after the animation
-    //             gsap.set(golaRef.current, { y: 0, opacity: 1 });
-    //             // gsap.set(rodRef.current, { y: 0, opacity: 1 });
-    //         },
-    //     });
-
-    //     tl.from(golaRef.current, {
-    //         y: -300,
-    //         opacity: 0,
-    //         duration: 1.7,
-    //         ease: "power1.out"
-    //     }, "an")
-    //     tl.from(rodRef.current, {
-    //         y: -300,
-    //         opacity: 0,
-    //         duration: 1.7,
-    //         ease: "power1.out"
-    //     }, "an");
-    // };
 
     const handleMouseEnter = () => {
         ripling();
@@ -71,7 +48,7 @@ const Card = () => {
         <div
             id="main"
             className="flex items-center justify-center w-screen h-screen bg-neutral-950">
-            <div 
+            <div
                 id="card-Container"
                 style={{ perspective: '1000px' }}>
                 <div
